@@ -20,7 +20,7 @@ print("2. Run cleanmgr (File Cleanup)\n")
 print("3. Clean Temp Files\n")
 print("4. Clean Browser Temp Files\n")
 print("5. Defragment C: Drive\n")
-print("6. Verify File Integrity")
+print("6. Verify File Integrity\n")
 
 opt = input("Please select an option:\n")
 
