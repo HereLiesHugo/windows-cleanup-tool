@@ -4,6 +4,7 @@ import functions.cleanup as clean
 import functions.temp_cleanup as tcl
 import functions.browser_cleanup as brcl
 import functions.defrag as defrag
+import functions.file_integ_check as fic
 
 def is_admin():
     try:
@@ -19,7 +20,7 @@ print("2. Run cleanmgr (File Cleanup)\n")
 print("3. Clean Temp Files\n")
 print("4. Clean Browser Temp Files\n")
 print("5. Defragment C: Drive\n")
-
+print("6. Verify File Integrity")
 
 opt = input("Please select an option:\n")
 
@@ -35,6 +36,9 @@ if is_admin():
         brcl.brCleanUp()
     elif opt == '5':
         defrag.defragDrive()
+    elif opt == '6':
+        fic.fic()
+
 else:
     # Re-run the program with admin rights
     print("You must be admin to run this script. Elevating UAC...\n")
