@@ -43,3 +43,5 @@ else:
     # Re-run the program with admin rights
     print("You must be admin to run this script. Elevating UAC...\n")
     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+
+#pyinstaller main.py --name WindowsCleanupTool --onefile
